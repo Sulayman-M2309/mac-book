@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book-pro</title>
+    <!-- tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- vanilla css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-yellow-600 p-5 mt-5 bg-gray-600 text-center">This is My Mac Pro Book</h1>
+    </header>
+    <div class="container mx-auto px-4 md:px-2">
+        <div class="grid grid-cols-2">
+            <!-- image -->
+            <div class="p-5 rounded m-5">
+                <div class="h-96 w-full">
+                  <img
+                    src="images/mac.png"
+                    id="art"
+                    class="w-full rounded h-full object-cover"
+                    alt=""
+                  />
+                </div>
+              </div>
+             <!-- options -->
+              <div class="mt-10 max-w-lg mx-auto">
+                <h1 class="text-3xl text-black font-semibold text-red-600 " >
+                Customize your Blue 24-inch iMac with Apple M1 chip.
+              </h1>
+              <p class="text-lg pt-2" > Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores,7-core GPU ,and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard - US English </p>
+     <!-------- memory -->
+             <h1 class="text-lg font-bold pt-11 text-yellow-500" >Memory</h1>
+              
+              <div class="pt-1">
+                <button  id="eight-gb"
+                  class="
+                    p-3
+                    border border-gray-700
+                    shadow
+                    hover:shadow-lg
+                    rounded
+                  "
+                
+                >
+                 8GB unified memory
+                </button>
+                <button
+                  id="sixteen"
+                  class="
+                    p-3
+                    border border-gray-700
+                    shadow
+                    hover:shadow-lg
+                    rounded
+                  "
+                >
+                16GB unified memory
+                </button>
+              </div>
+<!-- storage -->
+<h1 class="text-lg font-bold pt-11 text-green-500" >Storage</h1>
+<div class="pt-1 flex space-x-2">
+    <button  id="storage-first"
+      class="
+        p-3 
+        border border-gray-700
+        shadow
+        hover:shadow-lg
+        rounded
+      "
+    
+    >
+   256GB SSD storage
+    </button>
+    <button
+      id="storage-second"
+      class="
+        p-3 
+        border border-gray-700
+        shadow
+        hover:shadow-lg
+        rounded
+      "
+    >
+    512GB SSD storage
+    </button>
+    </button>
+    <button
+      id="storage-third"
+      class="
+        p-3
+        border border-gray-700
+        shadow
+        hover:shadow-lg
+        rounded
+      "
+    >
+   1TB SSD storage
+    </button>
+  </div>
+<!-- delivery -->
+<h1 class="text-lg font-bold pt-11 pb-2 text-blue-600" >Choose your delivery option</h1>
+<div class="pt-1  flex space-x-2">
+    <button  id="first-delivery"
+      class="
+        p-1
+        border border-gray-700
+        shadow
+        hover:shadow-lg
+        rounded
+      "
+    >
+     Friday, Aug 25 FREE Prime Delivery
+    </button>
+    <button
+      id="second-delivery"
+      class="
+        p-1
+        border border-gray-700
+        shadow
+        hover:shadow-lg
+        rounded
+      "
+    >
+    Friday, Aug 21 FREE Prime Delivery
+    </button>
+  
+  </div>
+<!-- price part -->
+<!-- best price -->
+<div class="grid gap-4 grid-cols-2 mt-5">
+  <h1 class="text-lg font-bold pt-8 text-indigo-900	" >Best Price</h1>
+  <h1 class="text-lg font-bold pt-8" >$<span id="price" >1299</span></h1>
+        </div>
+        <!-- extra memory cost  -->
+<div class="grid gap-4 grid-cols-2">
+    <h1 class="text-lg font-bold pt-8 text-pink-600" >   Extra Memory Cost </h1>
+<h1 class="text-lg font-bold pt-8 pl-3" >$<span id="memory" >0</span></h1>
+        </div>
+
+        <!-- extra storage cost -->
+<div class="grid gap-4 grid-cols-2">
+    <h1 class="text-lg font-bold pt-8  text-pink-900	" >  Extra Storage Cost </h1>
+<h1 class="text-lg font-bold pt-8 pl-3" >$<span id="storage"
+ >0</span></h1>
+        </div>
+        <!-- delivery charge -->
+<div class="grid gap-4 grid-cols-2">
+    <h1 class="text-lg font-bold pt-8 text-green-800" >Delivery charge</h1>
+<h1 class="text-lg font-bold pl-3 pt-8 pb-5" >$<span id="delivery">0</span></h1>
+        </div>
+        <!-- total price -->
+        <hr>
+<div class="grid gap-4 grid-cols-2">
+    <h1 class="text-lg font-bold pt-5 text-yellow-600">Total</h1>
+<h1 class="text-lg font-bold pt-5" >$<span id="total">1299</span></h1>
+        </div>
+
+        <!-- Apply promo code  -->
+        <div class="pb-5" >
+             <h1 class="text-2xl font-midium pt-5 text-red-600" >Add Promo Code </h1>
+        <input id="promo-input" class="p-2 inline-block shadow-lg border-2 border-gray-300 rounded" type="text"  value="" placeholder="Promo Code">
+
+        <button id="apply" class="text-white text-1xl bg-pink-600 hover:bg-pink-700 focus:ring-2 focus:ring-pink-300 p-2 m-1 rounded   shadow-lg">Apply</button>
+
+        </div>
+    </div>
+        </div> 
+        <hr>
+         <div >
+        <h1 class="text-3xl text-black font-semibold text-center p-5 text-yellow-700">
+            Total : $<span  id="last-total" >1299</span>
+        </h1>
+       </div>
+    <!--customjs  -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+.selected {
+    color: white;
+    background-color: black;
+     box-shadow: gray;
+     border-radius: 5px;
+    }
+    body{
+        font-family: 'Oswald', sans-serif;
+    }
